@@ -19,11 +19,11 @@
   .main-info {
     width: 100%;
     margin: 0 auto;
+    padding-bottom: 5rem;
   }
 
   .main-photo img {
     margin: 5rem 0 0 0;
-    width: 30vw;
   }
 
   .site-web {
@@ -45,7 +45,7 @@
 
 @media (max-width: 1350px) {
   .main-info {
-    padding: 0 0 10rem 0;
+    padding: 0 0 5rem 0;
   }
 
   .main-photo img {
@@ -72,8 +72,8 @@
 
 @media (max-width: 1000px) {
   .header-content {
-    height: 60vh;
     justify-content: center;
+    padding-bottom: 5rem;
   }
 
   .main-info {
@@ -144,6 +144,9 @@
     margin: 0 auto 1rem auto;
     padding: 0.5rem 1rem;
   }
+  .about .container{
+    padding: 0;
+  }
 
   .about {
     margin: 1rem 0;
@@ -157,8 +160,8 @@
     padding: 0.8rem;
   }
 
-  .about .bio p, h4, h2 {
-    margin: auto;
+  .about p, h4, h2 {
+    margin: 1rem 0;
   }
 
   #about-c .about-logos {

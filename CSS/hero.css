@@ -1,0 +1,39 @@
+.header-content {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    background: #E3DCD2;
+  }
+  
+  .main-info{
+    margin: auto 0;
+    width: 55vw;
+  }
+  
+  .main-photo img{
+    margin-top: 18vh;
+    width: 29vw;
+    padding-bottom: 2rem;
+  }
+  .header-content h1 {
+    font-size: 4.5rem;
+    line-height: 1.2;
+  }
+  
+  .type{
+    height: 5rem;
+    font-size: 4.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1rem
+  }
+  
+  .lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .dl-CV{
+    margin-left: 2rem;
+  }

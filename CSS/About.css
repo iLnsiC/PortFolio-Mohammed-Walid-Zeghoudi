@@ -1,0 +1,13 @@
+.about{
+  margin: 5rem 0;
+  text-align: center;
+}
+.about h2{
+  font-size: 4rem;
+}
+.about .bio {
+  padding: 0.8rem;
+}
+.about .bio p, h4, h2 {
+  margin: 1rem auto;
+}

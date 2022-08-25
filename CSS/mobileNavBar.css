@@ -1,0 +1,166 @@
+:root{
+  --PrimaryC: #E3DCD2;
+  --SecondaryC: #D96846;
+  --OverlayC: rgba(227, 220, 210, 0.85);
+  --MenuSpeed: 0.75s;
+}
+.menuW {
+  position: absolute;
+  top: 1rem;
+  left: 90%;
+  z-index: 1;
+}
+.menuW .toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+.menuW .hamb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background: var(--PrimaryC);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamb lines */
+
+.menuW .hamb > div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 3px;
+  background: #00334a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+}
+.menuW .hamb > div::before,
+.menuW .hamb > div::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  flex: none;
+  width: 100%;
+  height: 3px;
+  background: #00334a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+.menuW .hamb > div::after {
+  top: 10px;
+}
+
+/* Toggler Animation */
+
+.menuW .toggler:checked + .hamb > div {
+  transform: rotate(135deg);
+}
+/* Line to X */
+
+.menuW .toggler:checked + .hamb > div::before,
+.menuW .toggler:checked + .hamb > div::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Rotate on hover when checked*/
+
+.menuW .toggler:checked:hover + .hamb > div {
+  transform: rotate(225deg);
+}
+
+.menuW .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuW .menu > div {
+  background: var(--OverlayC);
+  border-radius: 0%;
+  width: 300vw;
+  height: 300vh;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+.menuW .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vw;
+  opacity: 0;
+  transition: opacity 0.4 ease;
+}
+
+/* Show menu when checked */
+
+.menuW .toggler:checked ~ .menu {
+  visibility: visible;
+}
+.menuW .toggler:checked ~ .menu > div {
+  border-radius: 50%;
+  transform: scale(1);
+  transition-duration: var(--MenuSpeed);
+}
+.menuW .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.4s ease 0.4s;
+}
+
+.menuW .menu > div > div > ul {
+  flex-direction: column;
+}
+
+.menuW .menu > div > div > ul > li {
+  color: #00334a;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.menuW .menu > div > div > ul > li > a {
+  color: inherit;
+  transition: color 0.4s ease;
+}
+.menuW .menu > div > div > ul > li > a:hover {
+  color: var(--SecondaryC);
+}
+
+.container{
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}

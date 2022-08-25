@@ -1,0 +1,55 @@
+#about-b {
+  background-color: #00334a;
+}
+.wrap {
+  width: 90vw;
+  color: #E3DCD2;
+  margin: auto;
+  padding: 3vh 0;
+  text-align: center;
+}
+
+#about-b .progress {
+  overflow: hidden;
+  height: 20px;
+  background: #E3DCD2;
+  border-radius: 10px;
+  margin-bottom: 0.6rem;
+}
+
+#about-b .progress div {
+  height: 100%;
+  background: #D96846;
+  color: #fff;
+  text-align: center;
+}
+
+#about-b .wrap ul{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.show{
+  transition: width 4s;
+}
+
+/* Style logo */
+
+#about-c{
+  background-color: #E3DCD2;
+  padding: 3rem;
+}
+#about-c .about-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: auto;
+}
+
+#about-c .about-logos img {
+  margin: auto;
+  width: 50%;
+}
+.zero{
+  width: 0;
+}

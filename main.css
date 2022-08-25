@@ -1,0 +1,66 @@
+/* Import Section's Styles */
+
+/* Style Header & NavBar */
+@import "CSS/mainNav.css";
+/* Style About */
+@import "CSS/About.css";
+/* Style barre Competence */
+@import "CSS/Competence.css";
+/* Style Footer */
+@import "CSS/Footer.css";
+/* Style Work */
+@import "CSS/work.css";
+/* Style Responsive */
+@import "CSS/Responsive.css";
+/* Style MobileNavBar*/
+@import "CSS/mobileNavbar.css";
+
+/* Style Globale */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  cursor: default;
+}
+
+body{
+  color:#00334a;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  color:#00334a;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  overflow: hidden;
+  margin: auto;
+}
+
+.btn-L{
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-L {
+  color: #E3DCD2;
+  background-color: #00334a;
+}
+
+.fas {
+  color: #D96846;
+  padding-bottom: 0.4rem;
+}

@@ -187,4 +187,7 @@
   .item-text-title {
     font-size: 1.2rem;
   }
+  #main-footer .container{
+    padding: 0;
+  }
 }

@@ -18,8 +18,8 @@ const run = () =>
       console.log(isInViewport(item));
       item.style.width = pourcentage[i];
       item.classList.add('show');
+      i++;
     }
-    i++;
   });
 
 // Events

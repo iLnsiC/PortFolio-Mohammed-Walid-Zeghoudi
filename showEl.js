@@ -15,10 +15,8 @@ const isInViewport = el => {
 const run = () =>
   items.forEach(item => {
     if (isInViewport(item)) {
-      console.log(isInViewport(item));
       item.style.width = pourcentage[i];
       item.classList.add('show');
-      i++;
     }
   });
 
